@@ -11,7 +11,7 @@
     <link rel=icon href="/img/brand/favicon.png" type=image/png> <link type=text/css
         href=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css rel=stylesheet>
     <link rel=stylesheet href=/libs/@fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
-        href=/css/writell-style-dark.css> </head> <body>
+        href=/libs/swiper/dist/css/swiper.min.css> <link rel=stylesheet href=/css/writell-style-dark.css> </head> <body>
 
     <div class="modal fade" tabindex=-1 role=dialog id=modal-cookies data-backdrop=false aria-labelledby=modal-cookies
         aria-hidden=true>
@@ -54,7 +54,7 @@
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
                             <a class=nav-link href=feed>Feed </a> </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class=nav-link href=recommended>Recommended </a> </li>
+                            <a class=nav-link href=recommended>Competition </a> </li>
 
                         <li class="nav-item nav-item-spaced dropdown bg-primary dropdown-animate d-block d-lg-none"
                             data-toggle=hover>
@@ -69,10 +69,13 @@
                             <a class=nav-link href="">About</a>
                         </li>
                         <li class=nav-item>
-                            <a class=nav-link href=""><i class="fa fa-search"></i></a>
+                            <a href=# data-action=omnisearch-open data-target=#omnisearch
+                                class="nav-link nav-link-icon px-2">
+                                <i class="fa fa-search"></i>
+                            </a>
                         </li>
                         <li class=nav-item>
-                            <a href="" class="btn btn-sm btn-primary btn-icon ml-3">
+                            <a href="{{ route('login') }}" class="btn btn-sm btn-primary btn-icon ml-3">
                                 <span class="btn-inner--text mx-2">Sign in</span>
                             </a>
                         </li>
@@ -83,6 +86,8 @@
     </header>
 
     @yield('content')
+
+    @include('components.search')
 
     <footer class="position-relative" id=footer-main>
         <div class="footer pt-lg-7 footer-dark bg-dark">
@@ -108,7 +113,7 @@
                                     </span>
                                     <span class=btn-inner--text>Learn More</span>
                                 </a>
-                                <a href="" class="btn btn-primary my-2 ml-0 ml-sm-3">Register</a>
+                                <a href="{{ route('register') }}" class="btn btn-primary my-2 ml-0 ml-sm-3">Register</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +123,8 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <a href=""> <img alt="" src="/img/brand/biglogo.svg" id=footer-logo>
                         </a>
-                        <p class="mt-4 text-sm opacity-8 pr-lg-4"></p>
+                        <p class="mt-2 text-sm opacity-8 pr-lg-4">A Competitive Blogging Platform where blogging is more
+                            fun than ever. Learn and Earn within your passion of writing.</p>
                         <ul class="nav mt-4">
                             <li class=nav-item>
                                 <a class="nav-link pl-0" href="" target=_blank>
@@ -220,4 +226,18 @@
 
     <script src=/libs/jquery/dist/jquery.min.js> </script> <script src=/libs/bootstrap/dist/js/bootstrap.bundle.min.js>
         </script> <script src=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js> </script> <script
-        src=/js/writell-script.js> </script> </body> </html>
+        src=/libs/swiper/dist/js/swiper.min.js> </script> <script src=/js/writell-script.js> </script> <!-- Initialize
+        Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    </script>
+    </body>
+
+</html>
