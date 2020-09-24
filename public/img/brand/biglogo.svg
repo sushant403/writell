@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="339" height="82" viewBox="0 0 339 82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #08a275;
+        font: bold 56px sans-serif;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #1dc8cc;
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #1dc8cc;
+        filter: url(#filter-2);
+      }
+    </style>
+  </defs>
+  <text id="miver" x="80" y="60" class="cls-1">Writell. </text>
+  <path class="cls-2" d="M34.5,11.006L0.008,70.994H68.992L34.5,11.006"/>
+  <path class="cls-3" d="M43.008,10.993h68.984L77.5,71,43.008,10.993m55.226,7.993H56.767L77.5,55.057l20.733-36.07"/>
+</svg>
