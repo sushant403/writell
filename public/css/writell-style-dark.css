@@ -4016,8 +4016,8 @@ input[type=submit].btn-block {
 
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    border-color: #0059f2;
-    background-color: #0059f2;
+    border-color:#08a275;
+    background-color:#08a275;
     box-shadow: none
 }
 
@@ -4086,8 +4086,8 @@ input[type=submit].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-    border-color: #0059f2;
-    background-color: #0059f2;
+    border-color:#08a275;
+    background-color:#08a275;
     box-shadow: none
 }
 
@@ -4280,7 +4280,7 @@ input[type=submit].btn-block {
     height: calc(1.5em + 1.5rem);
     padding: .75rem 1.25rem;
     line-height: 1.5;
-    color: #fff;
+    color: #253649;
     content: "Browse";
     background-color: #f9fafc;
     border-left: inherit;
@@ -4321,7 +4321,7 @@ input[type=submit].btn-block {
     width: 1rem;
     height: 1rem;
     margin-top: -.25rem;
-    background-color: #0059f2;
+    background-color:#08a275;
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 .1rem .25rem rgba(31, 45, 61, .1);
@@ -4354,7 +4354,7 @@ input[type=submit].btn-block {
 .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #0059f2;
+    background-color:#08a275;
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 .1rem .25rem rgba(31, 45, 61, .1);
@@ -4390,7 +4390,7 @@ input[type=submit].btn-block {
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
-    background-color: #0059f2;
+    background-color:#08a275;
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 .1rem .25rem rgba(31, 45, 61, .1);
@@ -4533,7 +4533,7 @@ input[type=submit].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #0059f2
+    background-color:#08a275
 }
 
 .nav-fill .nav-item {
@@ -5267,8 +5267,8 @@ input[type=submit].btn-block {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #0059f2;
-    border-color: #0059f2
+    background-color:#08a275;
+    border-color:#08a275
 }
 
 .page-item.disabled .page-link {
@@ -5574,7 +5574,7 @@ a.badge-white:focus {
 }
 
 .alert-primary hr {
-    border-top-color: #0059f2
+    border-top-color:#08a275
 }
 
 .alert-primary .alert-link {
@@ -5882,8 +5882,8 @@ a.badge-white:focus {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #0059f2;
-    border-color: #0059f2
+    background-color:#08a275;
+    border-color:#08a275
 }
 
 .list-group-item+.list-group-item {
@@ -13827,7 +13827,7 @@ button.bg-black:hover {
 }
 
 .border-dark-primary {
-    border-color: #0059f2 !important
+    border-color:#08a275 !important
 }
 
 .border-soft-secondary {
@@ -19163,8 +19163,8 @@ svg {
 }
 
 .checkbox-alphanumeric input:checked~label {
-    color: #0059f2;
-    border-color: #0059f2;
+    color:#08a275;
+    border-color:#08a275;
     transform: scale(1.1)
 }
 

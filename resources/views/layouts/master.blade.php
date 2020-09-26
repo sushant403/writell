@@ -100,7 +100,8 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow p-3">
                                 <h6 class="dropdown-header px-0 mb-2 text-primary">Hi, {{ Auth::user()->name }}!</h6>
-                                <a href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')" class=dropdown-item>
+                                <a href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')"
+                                    class=dropdown-item>
                                     <i class="fa fa-user fa-xs"></i>
                                     <span>My profile</span>
                                 </a>
@@ -116,11 +117,11 @@
                                 <!-- Authentication -->
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
-                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                             this.closest('form').submit();" class=dropdown-item>
-                                    <i class="fa fa-sign-out-alt fa-xs"></i>
-                                    <span>Logout</span>
-                                </a>
+                                        <i class="fa fa-sign-out-alt fa-xs"></i>
+                                        <span>Logout</span>
+                                    </a>
                                 </form>
                             </div>
                         </li>
