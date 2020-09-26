@@ -16,5 +16,9 @@ class RoutesController extends Controller
         return view('index');
     }
 
-    
+    public function postBlog()
+    {
+        return view('blogs.create');
+    }
+
 }

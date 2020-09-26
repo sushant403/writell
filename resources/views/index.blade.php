@@ -1,7 +1,14 @@
 @extends('layouts.master')
 
-@section('content')
+@section('title', 'Writell - Blogging Made Fun')
 
+@section('extra-css')
+<style>
+
+</style>
+@endsection
+
+@section('content')
 <section class="pt-4">
     <div class="container pb-4">
         <div class="row">
@@ -187,7 +194,7 @@
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide col-md-12 col-lg-3 mr-0">
+                        <div class="swiper-slide col-12 col-lg-3 mr-0">
                             <div class="card bg-cover bg-size--cover"
                                 style="background-image:url(/img/theme/light/img-v-3.jfif)"><span
                                     class="mask bg-dark opacity-3"></span>
@@ -211,7 +218,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide col-md-12 col-lg-3 mr-0">
+                        <div class="swiper-slide col-12 col-lg-3 mr-0">
+                            <div class="card bg-cover bg-size--cover"
+                                style="background-image:url(/img/theme/light/img-v-3.jfif)"><span
+                                    class="mask bg-dark opacity-3"></span>
+                                <div class="card-body pt-6 mt-auto position-relative">
+                                    <div class="top-0 right-0 position-absolute p-3"><button
+                                            class="btn btn-neutral py-0 px-2"><i
+                                                class="fa fa-fire mr-2 fa-xs text-primary"></i><span
+                                                class="text-xs text-primary font-weight-bolder">36</span></button>
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 pb-2 position-relative">
+                                    <div class="align-items-center">
+                                        <p class="my-0 text-xs opacity-8 font-weight-bolder">13th July, 2020</p>
+                                        <a href="#"
+                                            class="my-0 d-block h5 font-weight-bolder stretched-link">Billionaire
+                                            Secrets
+                                        </a>
+                                        <a href="#" class="h6 text-xs">Dipesh Bhattarai
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide col-12 col-lg-3 mr-0">
                             <div class="card bg-cover bg-size--cover"
                                 style="background-image:url(/img/theme/light/img-v-2.jpg)"><span
                                     class="mask bg-dark opacity-3"></span>
@@ -235,7 +266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide col-md-12 col-lg-3 mr-0">
+                        <div class="swiper-slide col-12 col-lg-3 mr-0">
                             <div class="card bg-cover bg-size--cover"
                                 style="background-image:url(/img/theme/light/img-v-7.jpg)"><span
                                     class="mask bg-dark opacity-3"></span>
@@ -259,7 +290,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide col-md-12 col-lg-3 mr-0">
+                        <div class="swiper-slide col-12 col-lg-3 mr-0">
                             <div class="card bg-cover bg-size--cover"
                                 style="background-image:url(/img/theme/light/img-v-0.jpg)"><span
                                     class="mask bg-dark opacity-3"></span>
@@ -294,9 +325,13 @@
 <section class="slice py-5 bg-section-secondary">
     <div class="container masonry-container">
         <div class="mt-4 text-center">
-            <a href=# class="btn btn-neutral hover-translate-y-n3">Load more</a>
+            <a href=# class="btn btn-neutral hover-translate-y-n3">Explore</a>
+            <a href="{{ url('post-blog') }}" class="btn btn-neutral hover-translate-y-n3">Write a Blog</a>
         </div>
     </div>
 </section>
 
+@endsection
+
+@section('extra-js')
 @endsection

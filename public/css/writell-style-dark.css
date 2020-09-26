@@ -29508,3 +29508,72 @@ span.flatpickr-weekday {
     opacity: 1
 }
 
+    /* Segment */
+
+    .nav-segment {
+        position: relative;
+        background-color: transparent;
+        border: 2px solid #08a275;
+        border-radius: 0.3125rem;
+    }
+    
+    .nav-segment:not(.nav-fill) {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    }
+    
+    .nav-segment .nav-link {
+        color: #02cc8f !important;
+        font-size: 0.675rem;
+        font-weight: 600;
+        padding: 0.625rem 1.125rem;
+        border-radius: 0.3125rem;
+    }
+    
+    .nav-segment .nav-link:hover {
+        color: #08a275;
+    }
+    
+    .nav-segment .nav-link.active {
+        color: #02cc8f !important;
+        font-weight: 700;
+        background-color: #145646;
+    }
+    
+    .nav-segment.nav-pills {
+        border-radius: 6.1875rem;
+    }
+    
+    .nav-segment.nav-pills .nav-link {
+        border-radius: 6.1875rem;
+    }
+    
+    /* Tabs */
+    
+    .nav-tabs .nav-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .nav-tabs .nav-link {
+        color: #677788;
+        border-bottom-width: 0.0625rem;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-top-width: 0;
+        padding: 1rem 0;
+        margin-bottom: -0.09375rem;
+    }
+    
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        border-bottom-width: 0.1875rem;
+    }
+    
+    .nav-tabs .nav-item:first-child {
+        margin-left: 0;
+    }
+    
+    .nav-tabs .nav-item:last-child {
+        margin-right: 0;
+    }
