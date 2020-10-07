@@ -11,8 +11,12 @@
     <link rel=icon href="/img/brand/favicon.png" type=image/png> <link type=text/css
         href=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css rel=stylesheet>
     <link rel=stylesheet href=/libs/@fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
-        href=/libs/swiper/dist/css/swiper.min.css> <link rel=stylesheet href=/css/writell-style-dark.css>
-        @yield('extra-css') </head> <body>
+        href=/libs/swiper/dist/css/swiper.min.css> <link rel=stylesheet href=/css/writell-style-dark.css id="stylesheet">
+    @yield('extra-css')
+    @include('components.spinner')
+</head>
+
+<body>
 
     <div class="modal fade" tabindex=-1 role=dialog id=modal-cookies data-backdrop=false aria-labelledby=modal-cookies
         aria-hidden=true>
@@ -74,6 +78,12 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+                        <li class=nav-item>
+                            <button type=button id=btnSwitchMode data-mode=dark
+                                class="btn btn-neutral btn-sm hover-scale-105 shadow-lg">
+                                <i class="fas fa-moon mr-2"></i>Toggle Dark
+                            </button>
+                        </li>
                         <li class=nav-item>
                             <a class=nav-link href="">Leaderboard</a>
                         </li>
@@ -286,10 +296,10 @@
 
     <script src=/libs/jquery/dist/jquery.min.js> </script> <script src=/libs/bootstrap/dist/js/bootstrap.bundle.min.js>
         </script> <script src=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js> </script> <script
-        src=/libs/swiper/dist/js/swiper.min.js> </script> <script src=/js/writell-script.js> </script> <!-- Initialize
-        Swiper -->
+        src=/libs/in-view/dist/in-view.min.js> </script> <script src=/libs/swiper/dist/js/swiper.min.js> </script>
+        <script src=/js/writell-script.js> </script> <!-- Initialize Swiper -->
         <script>
-                                                var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper-container', {
                                             slidesPerView: 'auto',
                                             spaceBetween: 0,
                                             pagination: {
@@ -301,6 +311,6 @@
 
     @yield('extra-js')
 
-    </body>
+</body>
 
 </html>
