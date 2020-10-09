@@ -75,7 +75,7 @@
                     </ul>
                     <ul class="navbar-nav align-items-lg-center d-flex ml-lg-auto">
                         <li class=nav-item>
-                            <button type=button id=btnSwitchMode data-mode=dark
+                            <button type=button id=btnSwitchMode data-mode=light
                                 class="btn btn-neutral btn-sm hover-scale-105">
                                 <i class="fas fa-moon mr-2"></i>Toggle Dark
                             </button>
