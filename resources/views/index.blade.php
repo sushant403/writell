@@ -9,7 +9,24 @@
 @endsection
 
 @section('content')
+
 <section class="pt-4">
+    <div class="row pb-4 mt-n4">
+        <div class="mx-auto">
+            <div class=" d-block d-lg-none">
+                <ul class="nav nav-segment nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active py-2 px-3" id="feed-tab" data-toggle="pill" href="#feed" role="tab"
+                            aria-controls="feed" aria-selected="true">BLOGS FEED</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2" id="competition-tab" data-toggle="pill" href="#competition" role="tab"
+                            aria-controls="competition" aria-selected="false">COMPETITION</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="container pb-4">
         <div class="row">
             <div class="col-lg-8 mb-4 mb-lg-0">

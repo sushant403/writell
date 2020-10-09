@@ -11,20 +11,23 @@
         }
     }
 
+    /* preloader light */
     body>div.preloader {
         position: fixed;
-        background: #1B2326;
+        background: #fff;
         width: 100%;
         height: 100%;
         z-index: 1071;
         opacity: 0;
-        transition: opacity .5s ease;
+        transition: opacity 0.5s ease;
         overflow: hidden;
         pointer-events: none;
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
     }
+
+    /* preloader light */
 
     body:not(.loaded)>div.preloader {
         opacity: 1
@@ -47,5 +50,5 @@
 </script>
 
 <div class=preloader>
-    <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
+    <img src="/img/preloader.svg" width="250">
 </div>

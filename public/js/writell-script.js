@@ -231,7 +231,7 @@ var Layout = function() {
                 Swal.fire({
                     title: "Sweet",
                     text: "Modal with a custom image ...",
-                    imageUrl: "../../assets/img/prv/splash.png",
+                    imageUrl: "/img/prv/splash.png",
                     buttonsStyling: !1,
                     confirmButtonClass: "btn btn-primary",
                     confirmButtonText: "Super!"

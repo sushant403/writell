@@ -1,41 +1,9 @@
-@section('extra-css')
 <link rel="stylesheet" href="//cdn.quilljs.com/1.3.6/quill.snow.css" />
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+@section('extra-css')
 <style>
-    .ql-toolbar .ql-stroke {
-        fill: none;
-        stroke: #fff ;
-    }
-
-    .ql-toolbar .ql-fill {
-        fill: #fff;
-        stroke: none;
-    }
-
-    .ql-toolbar .ql-picker {
-        color: #fff;
-    }
-
-    .ql-container {
-        font-size: 1rem;
-        /* height: 30rem; */
-        color: #fff;
-    }
-
     .ql-editor {
-        padding: 20px 15px !important;
-    }
-
-    .ql-editor.ql-blank::before {
-        color: #fff;
-    }
-
-    .ql-snow .ql-picker-options {
-        background-color: rgb(37 54 73);
-    }
-
-    .ql-snow.ql-toolbar.*:hover {
-        color: #08a275 !important;
+        height: 100vh !important;
     }
 </style>
 @endsection

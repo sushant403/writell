@@ -8,55 +8,25 @@
     <meta name=author content="Burgeon Tech">
     <title>@yield('title', 'Writell - Blogging Made Fun')</title>
 
-    <link rel=icon href="/img/brand/favicon.png" type=image/png> <link type=text/css
-        href=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css rel=stylesheet>
-    <link rel=stylesheet href=/libs/@fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
-        href=/libs/swiper/dist/css/swiper.min.css> <link rel=stylesheet href=/css/writell-style.css> <link
-        rel=stylesheet href=/css/writell-style-dark.css id="stylesheet">
-    @yield('extra-css') @include('components.spinner')
+    <link rel=icon href="/img/brand/favicon.png" type=image/png> <link rel=stylesheet
+        href=/libs/@fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet href=/css/writell-style.css>
+        <link rel=stylesheet href=/css/writell-style-dark.css id="stylesheet">
+
 </head>
 
 <body>
-
-    <div class="modal fade" tabindex=-1 role=dialog id=modal-cookies data-backdrop=false aria-labelledby=modal-cookies
-        aria-hidden=true>
-        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-            <div class="modal-content bg-dark-dark">
-                <div class=modal-body>
-                    <p class="text-sm text-white mb-3">We use cookies so that our services work for you. By using our
-                        website,
-                        you agree to our use of cookies.</p>
-                    <a href="" class="btn btn-sm btn-white" target=_blank>Learn more</a>
-                    <button type=button class="btn btn-sm btn-primary mr-2" data-dismiss=modal>OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <header class=header-transparent id=header-main>
         <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id=navbar-main>
             <div class=container>
-                <a class="navbar-brand @auth order-2 order-lg-1 @endauth" href="{{ route('index') }}"> <img alt=""
-                        src=/img/brand/biglogo.svg id=navbar-logo>
+                <a class=navbar-brand href="{{ route('index') }}"> <img alt="" src=/img/brand/biglogo.svg
+                        id=navbar-logo>
                 </a>
                 <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse
                     aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation">
                     <span class=navbar-toggler-icon></span>
                 </button>
-                <div class="collapse navbar-collapse navbar-collapse-overlay @auth order-1 order-lg-2 @endauth"
-                    id=navbar-main-collapse>
-                    <div class=position-relative>
-                        <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse
-                            aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation">
-                            <i class="fa fa-x"></i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-x">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                        </button>
+                <div class="collapse navbar-collapse navbar-collapse-overlay" id=navbar-main-collapse>
 
-                    </div>
                     <ul class="navbar-nav ml-lg-auto">
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
                             <!-- Nav -->
@@ -73,96 +43,17 @@
                             <!-- End Nav -->
                         </li>
                     </ul>
-                    <ul class="navbar-nav align-items-lg-center d-flex ml-lg-auto">
-                        <li class=nav-item>
-                            <button type=button id=btnSwitchMode data-mode=dark
-                                class="btn btn-neutral btn-sm hover-scale-105">
-                                <i class="fas fa-moon mr-2"></i>Toggle Dark
-                            </button>
-                        </li>
-                        <li class=nav-item>
-                            <a class=nav-link href="{{ url('leaderboard') }}">Leaderboard</a>
-                        </li>
+                    <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+
                         <li class=nav-item>
                             <a class=nav-link href="">About</a>
                         </li>
-                        <li class=nav-item>
-                            <a href=# data-action=omnisearch-open data-target=#omnisearch
-                                class="nav-link nav-link-icon">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        @auth
-                        <li class="nav-item d-block d-lg-none">
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                        this.closest('form').submit();" class=dropdown-item>
-                                    <i class="fa fa-sign-out-alt fa-xs"></i>
-                                    <span>Logout</span>
-                                </a>
-                            </form>
-                        </li>
-                        @endauth
-                        @guest
-                        <li class=nav-item>
-                            <a class=nav-link href="{{ route('login') }}">Login</a>
-                        </li>
-                        <li class=nav-item>
-                            <a href="{{ route('register') }}" class="btn btn-sm btn-primary btn-icon">
-                                <span class="btn-inner--text mx-2">Sign Up</span>
-                            </a>
-                        </li>
-                        @else
-                        <li class="nav-item dropdown dropdown-animate ml-2 d-none d-lg-block">
-                            <a class="nav-link nav-link-icon px-2" href=# role=button data-toggle=dropdown
-                                aria-haspopup=true aria-expanded=false>
-                                <i class="fa fa-cog"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow p-3">
-                                <h6 class="dropdown-header px-0 mb-2 text-primary">Hi, {{ Auth::user()->name }}!</h6>
-                                <a href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')"
-                                    class=dropdown-item>
-                                    <i class="fa fa-user fa-xs"></i>
-                                    <span>My profile</span>
-                                </a>
-                                <a href="{{ route('dashboard') }}" class=dropdown-item>
-                                    <i class="fa fa-blog fa-xs"></i>
-                                    <span>Dashboard</span>
-                                </a>
-                                <div class=dropdown-divider></div>
-                                <a href="" class=dropdown-item>
-                                    <i class="fa fa-cog fa-xs"></i>
-                                    <span>Settings</span>
-                                </a>
-                                <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                            this.closest('form').submit();" class=dropdown-item>
-                                        <i class="fa fa-sign-out-alt fa-xs"></i>
-                                        <span>Logout</span>
-                                    </a>
-                                </form>
-                            </div>
-                        </li>
-                        @endguest
                     </ul>
                 </div>
-                @auth
-                <div class="order-3">
-                    <a href="#modal-profile" role="button" data-toggle="modal">
-                        <span class="avatar rounded-circle" style="height: 0">
-                            <img alt="" style="width: auto; height:3rem" src="/img/theme/light/person-auth.jpg">
-                        </span>
-                    </a>
-                </div>
-                @endauth
             </div>
         </nav>
     </header> @yield('content')
-    @include('components.search') @auth
-    @include('components.sidebar-userprofile') @endauth <footer class="position-relative" id=footer-main>
+    <footer class="position-relative" id=footer-main>
         <div class="footer pt-lg-7 footer-dark bg-dark">
             <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
                 <svg width=2560px height=100px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
@@ -185,13 +76,7 @@
                                 <a href="" class="btn btn-white btn-icon my-2">
                                     <span class=btn-inner--text>Learn More</span>
                                 </a>
-                                @guest
-                                <a href=" {{ route('register') }}" class="btn btn-primary my-2 ml-0 ml-sm-3">Register
-                                </a>
-                                @else
-                                <a href=" {{ route('dashboard') }}" class="btn btn-primary my-2 ml-0 ml-sm-3">Dashboard
-                                </a>
-                                @endguest
+
                             </div>
                         </div>
                     </div>
@@ -304,23 +189,9 @@
         </div>
     </footer>
 
-    <script src=/libs/jquery/dist/jquery.min.js> </script> <script src=/libs/bootstrap/dist/js/bootstrap.bundle.min.js>
-        </script> <script src=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js> </script> <script
-        src=/libs/in-view/dist/in-view.min.js> </script> <script src=/libs/swiper/dist/js/swiper.min.js> </script>
-        <script src=/js/writell-script.js> </script> <!-- Initialize Swiper -->
-        <script>
-        var swiper = new Swiper('.swiper-container', {
-                                            slidesPerView: 'auto',
-                                            spaceBetween: 0,
-                                            pagination: {
-                                                el: '.swiper-pagination',
-                                                clickable: true,
-                                            },
-                                            });
-    </script>
-
-    @yield('extra-js')
-
+    <script src="/libs/jquery/dist/jquery.min.js"> </script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/writell-script.js"> </script>
 </body>
 
 </html>
