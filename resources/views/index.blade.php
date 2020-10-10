@@ -10,7 +10,7 @@
 
 @section('content')
 
-<section class="pt-4">
+<section class="pb-5 delimiter-bottom">
     <div class="row pb-4 mt-n4">
         <div class="mx-auto">
             <div class=" d-block d-lg-none">
@@ -339,11 +339,140 @@
         </div>
     </div>
 </section>
-<section class="slice py-5 bg-section-secondary">
-    <div class="container masonry-container">
-        <div class="mt-4 text-center">
-            <a href=# class="btn btn-neutral hover-translate-y-n3">Explore</a>
-            <a href="{{ url('post-blog') }}" class="btn btn-neutral hover-translate-y-n3">Write a Blog</a>
+
+<section class="slice slice-lg">
+    <div class="container container-lg">
+        <div class="row row-grid align-items-center">
+            <div class="col-12 col-lg-5">
+                <h6 class="">Creativity Awaits</h6>
+                <h1 class="font-weight-normal cd-headline clip clip-dark big-clip is-full-width">
+                    <span class="pt-0">Howdy, tell the world</span><br>
+                    <span class="pt-0">your</span>
+                    <span class="cd-words-wrapper pt-0 text-primary" style="width: 227.797px;">
+                        <b class="is-visible">story</b>
+                        <b class="is-hidden">thoughts</b>
+                        <b class="is-hidden">ideas</b>
+                        <b class="is-hidden">passion</b>
+                    </span>
+                </h1>
+                <p class="lead text-muted">Get started now and show the world what creative talent and passion you
+                    posses.</p>
+                <div class="mt-5"><a href="#" class="btn btn-neutral">Explore </a>
+                    <a href="{{ route('post.blog') }}" class="btn btn-neutral btn-icon d-inline-block"><span
+                            class="btn-inner--text">Write a
+                            Blog</span></a></div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="position-relative pt-md-5 pr-md-5 pt-lg-5 pt-xl-7 pr-xl-5">
+                    <div
+                        class="card border-0 shadow-lg col-md-8 px-0 position-md-absolute top-md-0 right-md-n0 right-lg-n3 right-xl-n5 zindex-100">
+                        <figure><img alt="Image placeholder" src="/img/theme/light/stat.jpg" class="card-img"></figure>
+                        <div class="card-img-overlay d-flex">
+                            <div class="text-center"><a href="https://www.youtube.com/watch?v=A9xi082ApCQ"
+                                    class="btn btn-xs btn-dark btn-icon" data-fancybox=""><span
+                                        class="btn-inner--text">Play video<i class="fa fa-play ml-2"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body pt-0 px-5">
+                            <div class="row">
+                                <div class="col-6 mt-2">
+                                    <div class="card shadow-none">
+                                        <div class="px-4 py-5 text-center">
+                                            <div class="h1 font-weight-bolder mb-0">
+                                                <span class=counter data-from=0 data-to=50 data-speed=1000
+                                                    data-refresh-interval=10>50</span>
+                                                <span class="counter-extra ml-n2">+</span>
+                                            </div>
+                                            <h6 class="text-warning">Blogs Written</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <div class="card shadow-none">
+                                        <div class="px-4 py-5 text-center">
+                                            <div class="h1 font-weight-bolder mb-0"><span
+                                                    class="counter counting-finished"><i
+                                                        class=" fa fa-mobile"></i></span></div>
+                                            <h6 class="text-warning">Mobile Friendly</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="py-2">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3"><i
+                                                    class="fas fa-user-friends"></i></div>
+                                        </div>
+                                        <div><span class="h6 mb-0">Perfect for beginners to experts</span></div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div class="icon icon-shape icon-warning icon-sm rounded-circle mr-3"><i
+                                                    class="fas fa-award"></i></div>
+                                        </div>
+                                        <div><span class="h6 mb-0">Compete with alike creative minds and win
+                                                prizes.</span></div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div class="icon icon-shape icon-success icon-sm rounded-circle mr-3"><i
+                                                    class="fas fa-bolt"></i></div>
+                                        </div>
+                                        <div><span class="h6 mb-0">Quality assured and thoughfully crafted blogs
+                                                picked.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card border-0 bg-transparent shadow-none">
+                    <div class="card-body pb-5">
+                        <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-5.svg"
+                                class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
+                        <h5 class="h4 lh-130 mb-3">Unleash your creativity</h5>
+                        <p class="text-muted mb-0">Bring your writing skills upfront along with hundreds of creative
+                            minds. It's time you win for what you have passion for.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 bg-transparent shadow-none mt-lg-5">
+                    <div class="card-body pb-5">
+                        <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-2.svg"
+                                class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
+                        <h5 class="h4 lh-130 mb-3">Expand the passion</h5>
+                        <p class="text-muted mb-0">Explore new contents by other creative bloggers right here at Writell
+                            and seek the passion you have.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 bg-transparent shadow-none mt-lg-7">
+                    <div class="card-body pb-5">
+                        <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-7.svg"
+                                class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
+                        <h5 class="h4 lh-130 mb-3">Exhibit your talent</h5>
+                        <p class="text-muted mb-0">You create. We deliver. Our experts make sure your art of writing
+                            reaches the audience it deserves.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

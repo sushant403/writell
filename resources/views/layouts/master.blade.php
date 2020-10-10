@@ -307,7 +307,9 @@
     <script src=/libs/jquery/dist/jquery.min.js> </script> <script src=/libs/bootstrap/dist/js/bootstrap.bundle.min.js>
         </script> <script src=/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js> </script> <script
         src=/libs/in-view/dist/in-view.min.js> </script> <script src=/libs/swiper/dist/js/swiper.min.js> </script>
-        <script src=/js/writell-script.js> </script> <!-- Initialize Swiper -->
+        <script src=/libs/jquery-countdown/dist/jquery.countdown.min.js> </script> <script
+        src="/libs/animated-headline/main.js"></script>
+    <script src=/js/writell-script.js> </script> <!-- Initialize Swiper -->
         <script>
         var swiper = new Swiper('.swiper-container', {
                                             slidesPerView: 'auto',
