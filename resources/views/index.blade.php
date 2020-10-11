@@ -338,9 +338,12 @@
             </div>
         </div>
     </div>
+    <a href="#sct-topics" style="background-image: none" class="tongue tongue-bottom tongue-section-primary scroll-me">
+        <i class="fa fa-angle-down"></i>
+    </a>
 </section>
 
-<section class="slice slice-lg">
+<section class="slice slice-lg pt-5" id="sct-topics">
     <div class="container container-lg">
         <div class="row row-grid align-items-center">
             <div class="col-12 col-lg-5">
@@ -367,7 +370,7 @@
                 <div class="position-relative pt-md-5 pr-md-5 pt-lg-5 pt-xl-7 pr-xl-5">
                     <div
                         class="card border-0 shadow-lg col-md-8 px-0 position-md-absolute top-md-0 right-md-n0 right-lg-n3 right-xl-n5 zindex-100">
-                        <figure><img alt="Image placeholder" src="/img/theme/light/stat.jpg" class="card-img"></figure>
+                        <figure><img alt="" src="/img/theme/light/stat.jpg" class="card-img"></figure>
                         <div class="card-img-overlay d-flex">
                             <div class="text-center"><a href="https://www.youtube.com/watch?v=A9xi082ApCQ"
                                     class="btn btn-xs btn-dark btn-icon" data-fancybox=""><span
@@ -379,11 +382,11 @@
                         <div class="card-body pt-0 px-5">
                             <div class="row">
                                 <div class="col-6 mt-2">
-                                    <div class="card shadow-none">
+                                    <div class="card shadow-none floating-lg">
                                         <div class="px-4 py-5 text-center">
                                             <div class="h1 font-weight-bolder mb-0">
                                                 <span class=counter data-from=0 data-to=50 data-speed=1000
-                                                    data-refresh-interval=10>50</span>
+                                                    data-refresh-interval=10>500</span>
                                                 <span class="counter-extra ml-n2">+</span>
                                             </div>
                                             <h6 class="text-warning">Blogs Written</h6>
@@ -391,7 +394,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 mt-2">
-                                    <div class="card shadow-none">
+                                    <div class="card shadow-none floating-sm">
                                         <div class="px-4 py-5 text-center">
                                             <div class="h1 font-weight-bolder mb-0"><span
                                                     class="counter counting-finished"><i
@@ -408,7 +411,8 @@
                                             <div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3"><i
                                                     class="fas fa-user-friends"></i></div>
                                         </div>
-                                        <div><span class="h6 mb-0">Perfect for beginners to experts</span></div>
+                                        <div><span class="h6 mb-0">Perfect to showcase your creative talents to the
+                                                world.</span></div>
                                     </div>
                                 </li>
                                 <li class="py-2">
@@ -427,7 +431,7 @@
                                             <div class="icon icon-shape icon-success icon-sm rounded-circle mr-3"><i
                                                     class="fas fa-bolt"></i></div>
                                         </div>
-                                        <div><span class="h6 mb-0">Quality assured and thoughfully crafted blogs
+                                        <div><span class="h6 mb-0">Quality assured and thoughtfully crafted blogs
                                                 picked.</span>
                                         </div>
                                     </div>
@@ -441,29 +445,29 @@
         <div class="row mt-5">
             <div class="col-md-4">
                 <div class="card border-0 bg-transparent shadow-none">
-                    <div class="card-body pb-5">
-                        <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-5.svg"
-                                class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
-                        <h5 class="h4 lh-130 mb-3">Unleash your creativity</h5>
-                        <p class="text-muted mb-0">Bring your writing skills upfront along with hundreds of creative
-                            minds. It's time you win for what you have passion for.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 bg-transparent shadow-none mt-lg-5">
-                    <div class="card-body pb-5">
+                    <div class="card-body pb-3">
                         <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-2.svg"
                                 class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
-                        <h5 class="h4 lh-130 mb-3">Expand the passion</h5>
+                        <h5 class="h4 lh-130 mb-3">Expand your passion</h5>
                         <p class="text-muted mb-0">Explore new contents by other creative bloggers right here at Writell
                             and seek the passion you have.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
+                <div class="card border-0 bg-transparent shadow-none mt-lg-5">
+                    <div class="card-body pb-3">
+                        <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-5.svg"
+                                class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
+                        <h5 class="h4 lh-130 mb-3">Unleash the creativity</h5>
+                        <p class="text-muted mb-0">Bring your writing skills upfront along with hundreds of creative
+                            minds. It's time you win for what you have passion for.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card border-0 bg-transparent shadow-none mt-lg-7">
-                    <div class="card-body pb-5">
+                    <div class="card-body pb-3">
                         <div class="pt-4 pb-5"><img src="/img/svg/illustrations/illustration-7.svg"
                                 class="img-fluid img-center" style="height:200px" alt="Illustration"></div>
                         <h5 class="h4 lh-130 mb-3">Exhibit your talent</h5>
@@ -477,6 +481,67 @@
     </div>
 </section>
 
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="row row-grid justify-content-around align-items-center">
+            <div class="col-lg-6">
+                <img alt="Image placeholder" src="/img/svg/illustrations/illustration-10.svg" class="img-fluid">
+            </div>
+            <div class="col-lg-5">
+                <h5 class="h3">Read within your comfort on <strong>any device</strong></h5>
+                <p class="lead my-4">For readers, writers, and the insatiably curious like you. All on the go. Dive
+                    deeper on all the things you love.</p>
+                <ul class="list-unstyled mb-0">
+                    <li class="py-2">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3"><i
+                                        class="fa fa-blog"></i></div>
+                            </div>
+                            <div><span class="h6 mb-0">Start browsing Writell any where, any time.</span></div>
+                        </div>
+                    </li>
+                    <li class="py-2">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3"><i
+                                        class="fas fa-mobile"></i></div>
+                            </div>
+                            <div><span class="h6 mb-0">Just a click away from reading the trends.</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slice slice-xs pt-5">
+    <div class="container">
+        <div class="row mb-2 justify-content-center text-center">
+            <div class="col-lg-8 col-md-10">
+                <h2 class="mt-2">Let's make an impact to the society.. our society together. Let's get Started.</h2>
+                <div class="mt-2">
+                    <p class="lead lh-180">Thousands of creative minds has already joined us. It's time you win for
+                        something good. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            @guest
+            <a href="{{ route('register') }}" class="btn btn-lg btn-primary btn-icon hover-translate-y-n10 mt-4"><span
+                    class="btn-inner--text">Get Started</span><span class="btn-inner--icon"><i
+                        class="fa fa-arrow-right"></i></span>
+            </a>
+            @else
+            <a href="{{ route('dashboard') }}" class="btn btn-lg btn-primary btn-icon hover-translate-y-n10 mt-4"><span
+                    class="btn-inner--text">Dashboard</span><span class="btn-inner--icon"><i
+                        class="fa fa-arrow-right"></i></span>
+            </a>
+            @endguest
+        </div>
+    </div>
+</section>
 @endsection
 
 @section('extra-js')

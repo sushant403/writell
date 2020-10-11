@@ -281,7 +281,7 @@
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class=col-md-6>
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy;2020 <a href=https://burgeontech.com class=font-weight-bold target=_blank>Burgeon
+                            &copy;2020 <a href=https://burgeon.com.np class=font-weight-bold target=_blank>Burgeon
                                 Tech</a>
                             . All rights reserved
                         </div>
