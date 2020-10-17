@@ -338,9 +338,6 @@
             </div>
         </div>
     </div>
-    <a href="#sct-topics" style="background-image: none" class="tongue tongue-bottom tongue-section-primary scroll-me">
-        <i class="fa fa-angle-down"></i>
-    </a>
 </section>
 
 <section class="slice slice-lg pt-5" id="sct-topics">
@@ -382,7 +379,7 @@
                         <div class="card-body pt-0 px-5">
                             <div class="row">
                                 <div class="col-6 mt-2">
-                                    <div class="card shadow-none floating-lg">
+                                    <div class="card shadow-none floating-sm">
                                         <div class="px-4 py-5 text-center">
                                             <div class="h1 font-weight-bolder mb-0">
                                                 <span class=counter data-from=0 data-to=50 data-speed=1000
@@ -482,13 +479,81 @@
 </section>
 
 <section class="slice slice-lg">
+    <div class="container position-relative">
+        <div class="row row-grid justify-content-around align-items-center">
+            <div class="col-lg-5">
+                <div class="text-center text-lg-left">
+                    <span class="badge badge-soft-primary badge-pill">Be Passionate</span>
+                    <h1 class="mt-4 mb-3">Inspiration can be found anywhere.</h1>
+                    <p class="lead lh-180">"Keep your face always toward the sunshine - and shadows will fall behind
+                        you."<br>
+                        <h6 class="text-muted"><i><del>Written</del> by Sushant Poudel</i></h6>
+                    </p>
+                    <div class="mt-6">
+                        <a href="#" class="btn btn-primary btn-icon rounded-pill hover-translate-y-n3">
+                            <span class="btn-inner--text">Start Writing</span>
+                            <span class="btn-inner--icon"><i class="fa fa-signature"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 d-block">
+                <div class="card bg-section-secondary mb-0 px-4 shadow-md perspective-right hover-scale-110">
+                    <div class="card-body">
+                        <h2 class="heading h2">
+                            <strong>Writing</strong> is thinking made visual.
+                        </h2>
+                        <p class="lead lh-180 mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                            eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam quis nostrud
+                            exercitation.</p>
+                        <div class="mt-4 d-flex">
+                            <a href="#" class="btn btn-sm btn-neutral btn-icon rounded-pill mx-auto">
+                                <span class="btn-inner--text">Continue Reading</span>
+                            </a>
+                        </div>
+                        <ul class="list-unstyled mt-4">
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0">Read the most interesting blogs handpicked everyday just
+                                            for you.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape icon-warning icon-sm rounded-circle mr-3">
+                                            <i class="fa fa-palette"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0">Word of the Day & Blog of the day featured at the end of
+                                            the day.</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slice slice-lg pt-6">
     <div class="container">
         <div class="row row-grid justify-content-around align-items-center">
             <div class="col-lg-6">
                 <img alt="Image placeholder" src="/img/svg/illustrations/illustration-10.svg" class="img-fluid">
             </div>
             <div class="col-lg-5">
-                <h5 class="h3">Read within your comfort on <strong>any device</strong></h5>
+                <h5 class="h3">Read within your comfort on <strong>any devices</strong></h5>
                 <p class="lead my-4">For readers, writers, and the insatiably curious like you. All on the go. Dive
                     deeper on all the things you love.</p>
                 <ul class="list-unstyled mb-0">
@@ -522,7 +587,7 @@
             <div class="col-lg-8 col-md-10">
                 <h2 class="mt-2">Let's make an impact to the society.. our society together. Let's get Started.</h2>
                 <div class="mt-2">
-                    <p class="lead lh-180">Thousands of creative minds has already joined us. It's time you win for
+                    <p class="lead lh-180">Thousands of creative minds has already joined us. It's time you also win for
                         something good. </p>
                 </div>
             </div>
