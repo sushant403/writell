@@ -283,7 +283,7 @@
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
                             &copy; 2022 <a href=https://burgeon.com.np class=font-weight-bold target=_blank>Burgeon
                                 Tech</a>
-                            . All Rights Reserved. &nbsp; <b>Developed By:</b><a href=https://sushantp.com.np target=_blank>Sushant Poudel</a>
+                            . All Rights Reserved. &nbsp;<b>Developed By:</b><a href=https://sushantp.com.np target=_blank> Sushant Poudel</a>
                         </div>
                     </div>
                     <div class=col-md-6>
